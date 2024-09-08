@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 68%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 3.7fr;
+    grid-template-rows: 110px 1fr;
+    grid-template-areas: 
+        "sidebar header"
+        "sidebar main-content"
+    ;
+    height: 100vh;
+}
+
+.sidebar{
+    background-color: red;
+    grid-area: sidebar;
+}
+
+.header{
+    background-color: blue;
+    grid-area: header;
+}
+
+.main-content{
+    background-color: green;
+    grid-area: main-content;
+}
+
