@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('./fonts/gunplay\ 3d.otf') format('opentype'); /* Point to the OTF file */
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -23,7 +30,7 @@ body {
 }
 
 .sidebar{
-    background-color: red;
+    background-color: rgb(58, 140, 221);
     grid-area: sidebar;
 }
 
@@ -44,6 +51,86 @@ body {
 
 .sidebar nav ul li a:hover {
     opacity: 0.7;
+}
+
+.icon {
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo div {
+    font-family: 'MyCustomFont' , Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+}
+
+/* Sidebar icon styling */
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.home-icon {
+    background-image: url(./media/home-account.svg);
+    background-size: cover;
+    color: #f4f4f4;
+}
+
+.profile-icon {
+    background-image: url(./media/card-account-details.svg);
+    background-size: cover;
+    color: #f4f4f4;
+}
+
+.messages-icon {
+    background-image: url(./media/message-bulleted.svg);
+    background-size: cover;
+    color: #f4f4f4;
+}
+
+.history-icon {
+    background-image: url(./media/history.svg);
+    background-size: cover;
+    color: #f4f4f4;
+}
+
+.tasks-icon {
+    background-image: url(./media/file-multiple.svg);
+    background-size: cover;
+    color: #f4f4f4;
+}
+
+.communities-icon {
+    background-image: url(./media/account-group.svg);
+    background-size: cover;
+    color: #f4f4f4;
+}
+
+.settings-icon {
+    background-image: url(./media/cog.svg);
+    background-size: cover;
+    color: #f4f4f4;
+}
+
+.support-icon {
+    background-image: url(./media/head-question-outline.svg);
+    background-size: cover;
+    color: #f4f4f4;
+}
+
+.privacy-icon {
+    background-image: url(./media/shield-check-outline.svg);
+    background-size: cover;
+    color: #f4f4f4;
 }
 
 .header{
