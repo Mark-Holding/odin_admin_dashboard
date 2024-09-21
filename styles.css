@@ -63,6 +63,14 @@ body {
 .logo {
     display: flex;
     align-items: center;
+    color: white;
+    margin-left: 10px;
+}
+
+.main-logo {
+    width: 70px;
+    background-image: url(./media/camera-iris.svg);
+    background-size: cover;
 }
 
 .logo div {
@@ -115,6 +123,14 @@ body {
     color: #f4f4f4;
 }
 
+.settings-link {
+    margin-top: 50px;
+}
+
+.home-link {
+    margin-top: 50px;
+}
+
 .settings-icon {
     background-image: url(./media/cog.svg);
     background-size: cover;
@@ -141,5 +157,17 @@ body {
 .main-content{
     background-color: green;
     grid-area: main-content;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "your-projects announcements"
+        "your-projects trending"
+    ;
 }
 
+/* Main Content Grid */
+
+.cover {
+    border: 1px red solid;
+}
